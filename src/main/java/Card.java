@@ -1,6 +1,5 @@
 package main.java;
 
-import Enum.*;
 import main.java.Enum.Colour;
 
 import javax.swing.*;
