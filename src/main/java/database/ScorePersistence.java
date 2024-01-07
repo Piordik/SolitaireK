@@ -10,7 +10,7 @@ public class ScorePersistence {
 
     private final MyDataBase db = MyDataBase.getInstance();
 
-    public void createSmth(int score) {
+    public void newScore(int score) {
         String sql = """
                 insert into game.game1
                 (score)

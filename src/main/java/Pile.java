@@ -6,7 +6,6 @@ import java.util.Stack;
 
 public class Pile extends JPanel {
 
-    protected int x, y;
     protected Stack<Card> cards;
 
     public Pile(int x, int y) {

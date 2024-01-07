@@ -1,6 +1,7 @@
 package main.java;
 
 import main.java.Enum.Colour;
+import main.java.Enum.Suit;
 
 import javax.swing.*;
 import java.awt.*;
@@ -46,7 +47,7 @@ public class Card {
         }
     }
 
-    private String cardFile(Suit s, int val) {
+    public String cardFile(Suit s, int val) {
         char ch;
 
         if (val < 1 || val > 13)
@@ -61,7 +62,7 @@ public class Card {
         }else if(s == Suit.Diamonds) {
             ch = 'd';
         }
-        else throw new IllegalArgumentException("Bad main.java.Card Enum.main.java.Suit");
+        else throw new IllegalArgumentException("Bad main.java.Card Enum.main.java.Enum.Suit");
 
         if(val < 10)
             return "/0" + val + ch + extension;

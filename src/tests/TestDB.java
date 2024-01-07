@@ -8,8 +8,7 @@ public class TestDB {
     @DisplayName("Update score in DB")
     public void updateScore() {
         ScorePersistence s = new ScorePersistence();
-        s.createSmth(120);
-
+        s.newScore(120);
         then(s.getById(1)).isEqualTo("120");
         s.updateScoreById(30, 1);
         then(s.getById(1)).isEqualTo("30");
@@ -19,7 +18,6 @@ public class TestDB {
     @DisplayName("Get score in db")
     public void getScore() {
         ScorePersistence s = new ScorePersistence();
-
         String score = s.getById(1);
         then(score).isNotNull();
         then(score).isEqualTo("30");

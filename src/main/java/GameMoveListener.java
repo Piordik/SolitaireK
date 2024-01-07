@@ -68,7 +68,7 @@ public class GameMoveListener extends MouseInputAdapter {
         } else if (pressedComponent instanceof Restart) {
             Main.game.removeAll();
             Main.game.iniPiles();
-            System.out.println("main.java.Restart");
+            System.out.println("Restart");
             ScorePersistence score = new ScorePersistence();
             System.out.println(valera);
             score.updateScoreById(valera, 1);

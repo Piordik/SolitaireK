@@ -1,5 +1,7 @@
 package main.java;
 
+import main.java.Enum.Suit;
+
 import java.awt.*;
 import java.util.Collections;
 
